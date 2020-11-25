@@ -6,7 +6,8 @@ import (
 	"time"
 )
 
-func TestWaitGroup(t *testing.T) {
+// 最大并发20限制
+func TestLimit(t *testing.T) {
 	wg := NewWaitGroup(20)
 
 	for i := 0; i < 100; i++ {
