@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-// 最大并发20限制
+// 并发20限制
 func TestLimit(t *testing.T) {
 	wg := NewWaitGroup(20)
 
